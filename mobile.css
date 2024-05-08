@@ -1,11 +1,11 @@
 @font-face {
   font-family: blackout;
-  src: url(/fonts/Blackout.otf);
+  src: url(./Fonts/Blackout.otf);
 }
 
 @font-face {
   font-family: Modern-sans;
-  src: url(/fonts/ModernSans-Light.otf);
+  src: url(./Fonts/ModernSans-Light.otf);
 }
 
 * {
