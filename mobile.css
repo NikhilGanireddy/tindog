@@ -1,0 +1,1200 @@
+@font-face {
+  font-family: blackout;
+  src: url(/fonts/Blackout.otf);
+}
+
+@font-face {
+  font-family: Modern-sans;
+  src: url(/fonts/ModernSans-Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  color: rgba(255, 228, 196, 0.595);
+  font-family: Modern-sans;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 330px) and (max-width: 430px) {
+  .hero-section {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+      url(/Images/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  nav {
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgba(255, 228, 196, 0.595); */
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .brand-logo {
+    height: 8vh;
+    width: auto;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid rgba(255, 228, 196, 0.595);
+    cursor: pointer;
+  }
+
+  .hero-text-area {
+    height: 80vh;
+    width: 80vw;
+    /* border: 1px solid rgba(255, 228, 196, 0.595); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-text-area h1 {
+    font-family: blackout;
+    color: black;
+    font-size: 36px;
+  }
+
+  .hero-text-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-text-area a {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(255, 228, 196, 0.595);
+    background-color: black;
+    padding: 7px 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+  }
+
+  .ghost_button {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .hero-text-area a:focus {
+    background-color: rgba(255, 228, 196, 0.595);
+    border: 1px solid transparent;
+    color: black;
+  }
+
+  .dog-business-section {
+    height: 40vh;
+    width: 70vw;
+    margin: 100px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid rgba(255, 228, 196, 0.595); */
+  }
+
+  .dog-business-section-1 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dog-business-section-2 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .date-a-dog,
+  .buy-a-dog,
+  .dog-care,
+  .dog-gadgets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33vw;
+    background-color: rgba(255, 228, 196, 0.595);
+    border: 1px solid transparent;
+    border-radius: 30px;
+  }
+
+  .date-a-dog img,
+  .buy-a-dog img,
+  .dog-care img,
+  .dog-gadgets img {
+    width: 24vw;
+    height: auto;
+    margin: 10px auto 0px auto;
+  }
+
+  .date-a-dog p,
+  .buy-a-dog p,
+  .dog-care p,
+  .dog-gadgets p {
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px auto;
+  }
+
+  .breeds-section {
+    width: 70vw;
+    height: 80vh;
+    /* border: 1px solid rgba(255, 228, 196, 0.595); */
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .breeds-section h1 {
+    font-size: 20px;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .breeds-section h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: rgba(255, 228, 196, 0.595);
+    margin: 10px auto 50px auto;
+  }
+
+  .breeds-section-1,
+  .breeds-section-2,
+  .breeds-section-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .breeds-div {
+    width: 45%;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgba(255, 228, 196, 0.595);
+    border-radius: 20px;
+  }
+
+  .breed-icon {
+    width: 60%;
+    height: auto;
+    opacity: 0.595;
+  }
+
+  .breeds-section-4,
+  .breeds-section-5 {
+    display: none;
+  }
+
+  .breed-name {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .show-more-breeds-button {
+    margin-top: 20px;
+    padding: 7px 20px;
+    color: rgba(255, 228, 196, 0.595);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    border: 1px solid rgba(255, 228, 196, 0.595);
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 15px;
+  }
+
+  .show-more-breeds-button:focus {
+    background-color: rgba(255, 228, 196, 0.595);
+    border: 1px solid black;
+    color: black;
+  }
+
+  .how-it-works-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 70vw;
+    margin: 0 auto 50px;
+    text-transform: uppercase;
+  }
+
+  .how-it-works-section h1 {
+    width: 80%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .how-it-works-section h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: rgba(255, 228, 196, 0.595);
+    margin: 10px auto;
+  }
+
+  .how-it-works-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .step-1,
+  .step-2,
+  .step-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+  }
+
+  .step-1 img,
+  .step-2 img,
+  .step-3 img {
+    width: 20px;
+    height: auto;
+    opacity: 0.595;
+    margin-right: 10px;
+  }
+
+  .step-1 p,
+  .step-2 p,
+  .step-3 p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .how-it-works-buttons {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .how-it-works-buttons a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 228, 196, 0.595);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid rgba(255, 228, 196, 0.595);
+    padding: 5px 8px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+  }
+
+  .how-it-works-buttons a img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    opacity: 0.595;
+  }
+
+  .locations-section {
+    width: 70vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .locations-section h1 {
+    width: 80%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  .locations-section h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: rgba(255, 228, 196, 0.595);
+    margin: 10px auto;
+  }
+
+  .cities-div-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .cities-div {
+    display: none;
+  }
+
+  .city {
+    width: 100%;
+    display: flex;
+    height: 15vh;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 228, 196, 0.595);
+  }
+
+  .city h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 10px;
+  }
+
+  .city-div-1 {
+    width: 38%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .city-div-1 img {
+    width: 80px;
+    height: auto;
+    opacity: 0.595;
+  }
+
+  .city-div-2 {
+    height: 10vh;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .city-div-2 p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .city-div-2 img {
+    width: 20px;
+    height: auto;
+    opacity: 0.595;
+    margin-right: 10px;
+  }
+
+  .happy-customers,
+  .healthy-dogs,
+  .instagram-account {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .instagram-account a {
+    text-decoration: none;
+    color: rgba(255, 228, 196, 0.595);
+  }
+
+  .pricing-section {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px auto 50px;
+  }
+
+  .pricing-section h1 {
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+
+  .pricing-section h1::after {
+    content: "";
+    display: block;
+    margin: 10px auto 0px;
+    background-color: rgba(255, 228, 196, 0.595);
+    width: 60%;
+    height: 1px;
+  }
+
+  .pricing-div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid rgba(255, 228, 196, 0.595); */
+  }
+
+  .pricing-div-1,
+  .pricing-div-2,
+  .pricing-div-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 228, 196, 0.595);
+  }
+
+  .pricing-div-3 {
+    margin-bottom: 30px;
+  }
+
+  .plan-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .month {
+    font-size: 12px;
+  }
+
+  .pricing-div-1 .pricing-cost-div-1,
+  .pricing-div-2 .pricing-cost-div-1,
+  .pricing-div-3 .pricing-cost-div-1 {
+    background-color: rgba(255, 228, 196, 0.595);
+    color: black;
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  .pricing-cost-div-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 8vh;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid transparent;
+  }
+
+  .pricing-cost-div-1 h2 {
+    margin-bottom: 10px;
+  }
+
+  .pricing-cost-div-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 15vh;
+    /* border: 1px solid rgba(255, 228, 196, 0.595); */
+  }
+
+  .pricing-cost-div-3 {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgba(255, 228, 196, 0.595); */
+  }
+
+  .pricing-cost-div-3 a {
+    padding: 5px 10px;
+    background-color: rgba(255, 228, 196, 0.595);
+    border: 1px solid transparent;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1250px) and (min-height: 750px) {
+  .hero-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+      url(/Images/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    width: 95vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-logo {
+    height: 5em;
+    width: auto;
+    margin-left: 20px;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+  }
+
+  .brand-logo:hover {
+    border: 2px solid rgba(255, 228, 196, 0.595);
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+  nav ul li a {
+    color: rgba(255, 228, 196, 0.595);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    margin-right: 20px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    border-bottom: 1px solid rgba(255, 228, 196, 0.595);
+  }
+
+  .hero-text-area {
+    height: 88vh;
+    width: 92.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+
+  .hero-text-area h1 {
+    font-family: blackout;
+    color: black;
+    font-size: 3em;
+    font-weight: 400;
+  }
+
+  .hero-text-links {
+    margin-top: 1.2em;
+  }
+
+  .hero-text-links a {
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: black;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: rgba(255, 228, 196, 0.595);
+    transition: 0.3s;
+  }
+
+  .ghost_button {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .hero-text-links a:hover {
+    background-color: rgba(255, 228, 196, 0.595);
+    border: 1px solid transparent;
+    color: black;
+  }
+
+  .dog-business-section {
+    height: 40vh;
+    width: 70vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .dog-business-section-1 {
+    width: 45%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dog-business-section-2 {
+    width: 45%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .date-a-dog,
+  .buy-a-dog,
+  .dog-care,
+  .dog-gadgets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 90%;
+    border: 1px solid transparent;
+    background-color: rgba(255, 228, 196, 0.595);
+    border-radius: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
+  .date-a-dog:hover,
+  .buy-a-dog:hover,
+  .dog-care:hover,
+  .dog-gadgets:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  .date-a-dog img,
+  .buy-a-dog img,
+  .dog-care img,
+  .dog-gadgets img {
+    width: 130px;
+    height: auto;
+    /* margin: 10px auto 0px auto; */
+  }
+
+  .date-a-dog p,
+  .buy-a-dog p,
+  .dog-care p,
+  .dog-gadgets p {
+    font-size: 1.2em;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px auto;
+  }
+
+  .breeds-section {
+    background-color: black;
+    color: rgba(255, 228, 196, 0.595);
+    width: 70vw;
+    height: 80vh;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin: 30px auto 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  .breeds-section:hover {
+    border: 1px solid rgba(255, 228, 196, 0.595);
+  }
+
+  .breeds-section h1 {
+    margin: 40px auto 30px;
+    height: 6vh;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  .breeds-section h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: rgba(255, 228, 196, 0.595);
+    margin: 20px auto 50px auto;
+  }
+
+  .breed-icon {
+    width: 100px;
+    height: auto;
+    opacity: 0.495;
+  }
+
+  .breeds-section-1,
+  .breeds-section-2,
+  .breeds-section-3 {
+    display: none;
+  }
+
+  .breeds-section-4,
+  .breeds-section-5 {
+    width: 95%;
+    height: 28vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .breeds-div {
+    width: 20%;
+    height: 80%;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1em;
+    transition: 0.3s;
+  }
+
+  .breeds-div:hover {
+    border: 1px solid rgba(255, 228, 196, 0.595);
+  }
+
+  .show-more-breeds-button {
+    padding: 7px 20px;
+    background-color: rgba(255, 228, 196, 0.595);
+    border: 1px solid transparent;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px auto 50px;
+  }
+
+  .how-it-works-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 70vw;
+    margin: 30px auto 50px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+  }
+
+  .how-it-works-section:hover {
+    border: 1px solid rgba(255, 228, 196, 0.595);
+  }
+
+  .how-it-works-section h1 {
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+    line-height: 30px;
+  }
+
+  .how-it-works-section h1::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 1px;
+    background-color: rgba(255, 228, 196, 0.595);
+    margin: 20px auto;
+  }
+
+  .how-it-works-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .step-1,
+  .step-2,
+  .step-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+  }
+
+  .step-1 img,
+  .step-2 img,
+  .step-3 img {
+    width: 40px;
+    height: auto;
+    opacity: 0.495;
+    margin-right: 20px;
+  }
+
+  .step-1 p,
+  .step-2 p,
+  .step-3 p {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .how-it-works-buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .how-it-works-buttons a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 228, 196, 0.595);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid rgba(255, 228, 196, 0.595);
+    padding: 7px 15px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    transition: 0.3s;
+  }
+
+  .how-it-works-buttons a:hover {
+    border-radius: 10px;
+  }
+
+  .how-it-works-buttons a img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    opacity: 0.595;
+  }
+
+  .cities-div-mobile {
+    display: none;
+  }
+
+  .locations-section {
+    width: 70vw;
+    height: 90vh;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: rgba(255, 228, 196, 0.595);
+    margin: 50px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+
+  .locations-section:hover {
+    border: 1px solid rgba(255, 228, 196, 0.595);
+  }
+
+  .locations-section h1 {
+    font-size: 150%;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+  }
+
+  .locations-section h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: rgba(255, 228, 196, 0.595);
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .cities-div {
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid rgba(255, 228, 196, 0.595); */
+    border-radius: 20px;
+  }
+
+  .city {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    width: 24%;
+    height: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .city:hover {
+    border: 1px solid rgba(255, 228, 196, 0.595);
+    border-radius: 20px;
+  }
+
+  .city img {
+    width: 100px;
+    height: auto;
+    opacity: 0.595;
+  }
+
+  .city h2 {
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .happy-customers,
+  .healthy-dogs,
+  .instagram-account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .happy-customers img,
+  .healthy-dogs img {
+    width: 20px;
+    height: auto;
+    opacity: 0.595;
+    margin: 3px 0;
+  }
+
+  .happy-customers p,
+  .healthy-dogs p {
+    font-size: 70%;
+    margin-left: 10px;
+  }
+
+  .instagram-account img {
+    width: 20px;
+    height: auto;
+    opacity: 0.595;
+  }
+
+  .instagram-account a {
+    font-size: 80%;
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgba(255, 228, 196, 0.595);
+    text-transform: none;
+  }
+
+  .pricing-section {
+    width: 70vw;
+    height: 60vh;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin: 50px auto;
+    color: rgba(255, 228, 196, 0.595);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+
+  .pricing-section:hover {
+    border: 1px solid rgba(255, 228, 196, 0.595);
+  }
+
+  .pricing-section h1 {
+    font-size: 150%;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+  }
+
+  .pricing-section h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: rgba(255, 228, 196, 0.595);
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .pricing-div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .plan-name {
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
+
+  .month {
+    font-size: 16px;
+    text-transform: lowercase;
+  }
+
+  .pricing-div-1,
+  .pricing-div-2,
+  .pricing-div-3 {
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: rgba(255, 228, 196, 0.595);
+    color: black;
+    padding: 20px;
+  }
+
+  .pricing-cost-div-1 {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pricing-cost-div-1::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .pricing-cost-div-2 {
+    display: flex;
+    flex-direction: column;
+    text-transform: lowercase;
+    font-size: 24px;
+  }
+
+  .pricing-cost-div-2 p {
+    margin: 10px 0;
+    font-size: 85%;
+  }
+
+  .pricing-cost-div-2::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .pricing-cost-div-3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pricing-cost-div-3 a {
+    margin-top: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: rgba(255, 228, 196, 0.595);
+    background-color: black;
+    transition: 0.3s;
+  }
+
+  .pricing-cost-div-3 a:hover {
+    opacity: 0.8;
+    border-radius: 20px;
+  }
+}
